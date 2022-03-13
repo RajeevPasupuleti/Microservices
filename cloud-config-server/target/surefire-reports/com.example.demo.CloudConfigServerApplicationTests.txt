@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.CloudConfigServerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.724 s <<< FAILURE! - in com.example.demo.CloudConfigServerApplicationTests
+contextLoads  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: Invocation of init method failed; nested exception is org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+Caused by: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/RajeevPasupuleti/git-demo/blob/master/application.yml: https://github.com/RajeevPasupuleti/git-demo/blob/master/application.yml/info/refs?service=git-upload-pack not found: Not Found
+

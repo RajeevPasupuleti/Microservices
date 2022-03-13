@@ -1,0 +1,19 @@
+server:
+  port: 9192
+  
+spring:
+  application:
+    name: Config-Server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/RajeevPasupuleti/git-demo/blob/00a166a8f9990e7579070b4f5afcc7f11aa40fdb/application.yml
+          clone-on-start: false
+          
+            
+  
+    
+
+    
+    
